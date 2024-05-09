@@ -5,22 +5,23 @@ import java.util.ArrayList;
 import java.util.Deque;
 import java.util.List;
 
-class ListNode {
-    int val;
-    ListNode next;
-
-    ListNode() {}
-
-    ListNode(int val) {
-        this.val = val;
-    }
-
-    ListNode(int val, ListNode next) {
-        this.val = val;
-        this.next = next;
-    }
-}
 public class RemoveNodesFromALinkedList {
+    class ListNode {
+        int val;
+        ListNode next;
+
+        ListNode() {}
+
+        ListNode(int val) {
+            this.val = val;
+        }
+
+        ListNode(int val, ListNode next) {
+            this.val = val;
+            this.next = next;
+        }
+    }
+
     public ListNode removeNodes(ListNode head) {
         // Inicializa uma array pra pegar os valores dos nós
         List<Integer> nodeValues = new ArrayList<>();
